@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLogin } from "../../hooks/useLogin";
 import "./Home.css";
-import { Image } from "cloudinary-react";
 import NavSignUp from "../../components/NavBars/NavSignUp";
 
 function Login() {
@@ -65,12 +64,8 @@ function Login() {
         {statusComponent}
       </div>
       <div className="content-container">
-        <h1 className="title-content">Welcome to HackYourFuture Community</h1>
-        <p className="content-text">
-          We are delighted that you have joined us! We hope you will enjoy your
-          stay in our community and find it beneficial for expanding your
-          knowledge.
-        </p>
+        <h1 className="title-content">HackYourFuture Graduation Project</h1>
+        <p className="content-text">This is bla bla bla</p>
       </div>
     </div>
   );
@@ -81,39 +76,6 @@ const Home = () => {
     <div className="container">
       <NavSignUp />
       <Login />
-      <div className="box">
-        <span className="image" style={{ "--1": 1 }}>
-          <Image cloudName="dfzxe70hs" publicId="1_natjfy.png" alt="1" />
-        </span>
-        <span className="image" style={{ "--1": 2 }}>
-          <Image cloudName="dfzxe70hs" publicId="2_uhxkzb" alt="2" />
-        </span>
-        <span className="image" style={{ "--1": 3 }}>
-          <Image cloudName="dfzxe70hs" publicId="3_exhk2h" alt="3" />
-        </span>
-        <span className="image" style={{ "--1": 4 }}>
-          <Image cloudName="dfzxe70hs" publicId="4_k74hrq" alt="4" />
-        </span>
-        <span className="image" style={{ "--1": 5 }}>
-          <Image cloudName="dfzxe70hs" publicId="5_hoolrh" alt="5" />
-        </span>
-        <span className="image" style={{ "--1": 6 }}>
-          <Image cloudName="dfzxe70hs" publicId="6_dkvzrt" alt="6" />
-        </span>
-        <span className="image" style={{ "--1": 7 }}>
-          <Image cloudName="dfzxe70hs" publicId="7_eopgyi" alt="7" />
-        </span>
-        <span className="image" style={{ "--1": 8 }}>
-          <Image cloudName="dfzxe70hs" publicId="8_a9ibh6" alt="8" />
-        </span>
-      </div>
-      <div className="footerlandpage">
-        <footer>
-          <p>
-            <b>© 2022 - 2023</b>
-          </p>
-        </footer>
-      </div>
     </div>
   );
 };

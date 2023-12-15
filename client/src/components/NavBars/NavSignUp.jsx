@@ -8,7 +8,7 @@ const NavSignUp = () => {
     <ul className="nav-sign-up">
       <Link to="/">
         <Image
-          className="logoImgg anim-logo"
+          className="logo-img anim-logo"
           cloudName="dfzxe70hs"
           publicId="9_htabcp.png"
           alt="1"
